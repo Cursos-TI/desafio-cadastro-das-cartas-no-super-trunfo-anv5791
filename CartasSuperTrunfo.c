@@ -21,7 +21,7 @@ int main() {
     char codigocidade[4] = "A01";
     char nomecidade[20];
     int populacao;
-    double area;
+    float area;
     double pib;
     int numeropontoturistico;
 
@@ -34,11 +34,11 @@ int main() {
     printf("População: %d Habitantes\n", populacao);
     
     printf("Qual a área da cidade?\n");
-    scanf(" %.2f", &area);
+    scanf(" %f", &area);
     printf("Área Total: %.2f Km\n", area);
     
     printf("Qual é o PIB da cidade?\n");
-    scanf(" %.2f", &pib);
+    scanf(" %f", &pib);
     printf("PIB Total: %.2f\n", pib);
 
 
