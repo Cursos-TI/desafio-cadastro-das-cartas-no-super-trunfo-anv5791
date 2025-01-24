@@ -18,28 +18,37 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
     
-    char codigocidade[4] = "A01";
-    char nomecidade[20];
-    int populacao;
-    float area;
-    double pib;
-    int numeropontoturistico;
+    char codigocidade[4] [24] = {'A01','A02','A03','A04','B01','B02','B03','B04','C01','C02','C03','C04','D01','D02','D03','D04','E01','E02','E03','E04','F01','F02','F03','F04','G01','G02','G03','G04','H01','H02','H03','H04'};
+    char nomecidade[20] [24];
+    int populacao [24];
+    float area [24];
+    double pib [24];
+    int numeropontoturistico [24];
 
-    printf("Entre com o nome da Cidade 1\n");
-    scanf(" %s", &nomecidade);
-    printf("Nome da Cidade: %s - Codigo: %s\n", nomecidade, codigocidade);
+
+    printf("Entre com o nome da Cidade %s\n", codigocidade[0]);
+    scanf("%s", nomecidade[0]);
     
-    printf("Qual é a população?\n");
-    scanf(" %d", &populacao);
-    printf("População: %d Habitantes\n", populacao);
+    printf("Qual é a população da cidade %s?\n", nomecidade[0]);
+    scanf(" %d", &populacao[0]);
+
+    printf("Qual a área da cidade %s?\n", nomecidade[0]);
+    scanf(" %f", &area[0]);
     
-    printf("Qual a área da cidade?\n");
-    scanf(" %f", &area);
-    printf("Área Total: %.2f Km\n", area);
+    printf("Qual é o PIB da cidade?\n", nomecidade[0]);
+    scanf(" %lf", &pib[0]);
+
+    printf("Quantos pontos turísticos tem na cidade %s?", nomecidade[0]);
+    scanf("%d", &numeropontoturistico[0]);
+
     
-    printf("Qual é o PIB da cidade?\n");
-    scanf(" %f", &pib);
-    printf("PIB Total: %.2f\n", pib);
+    
+    printf("Carta %s", codigocidade[0]);
+    printf("População total da cidade %s", populacao[0]);
+    printf("Área Total: %.2f Km\n", area[0]);
+    printf("PIB total da cidade %lf", pib[0]);
+    printf("Número de pontos turísticos: %d", numeropontoturistico[0]);
+    
 
 
     return 0;
