@@ -40,10 +40,10 @@ int main() {
     scanf(" %lf", &pib[0]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[0]);
     scanf("%d", &numeropontoturistico[0]);
+    printf("\n");
 
 
-
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[1]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[1]);
     scanf("%s", nomecidade[1]);
     printf("Qual é a população da cidade %s?\n", nomecidade[1]);
     scanf(" %d", &populacao[1]);
@@ -53,10 +53,11 @@ int main() {
     scanf(" %lf", &pib[1]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[1]);
     scanf("%d", &numeropontoturistico[1]);
+    printf("\n");
     
 
 
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[2]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[2]);
     scanf("%s", nomecidade[2]);
     printf("Qual é a população da cidade %s?\n", nomecidade[2]);
     scanf(" %d", &populacao[2]);
@@ -66,9 +67,10 @@ int main() {
     scanf(" %lf", &pib[2]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[2]);
     scanf("%d", &numeropontoturistico[2]);
+    printf("\n");
     
 
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[3]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[3]);
     scanf("%s", nomecidade[3]);
     printf("Qual é a população da cidade %s?\n", nomecidade[3]);
     scanf(" %d", &populacao[3]);
@@ -78,10 +80,10 @@ int main() {
     scanf(" %lf", &pib[3]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[3]);
     scanf("%d", &numeropontoturistico[3]);
+    printf("\n");
 
 
-
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[4]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[4]);
     scanf("%s", nomecidade[4]);
     printf("Qual é a população da cidade %s?\n", nomecidade[4]);
     scanf(" %d", &populacao[4]);
@@ -91,10 +93,10 @@ int main() {
     scanf(" %lf", &pib[4]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[4]);
     scanf("%d", &numeropontoturistico[4]);
+    printf("\n");
 
 
-
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[5]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[5]);
     scanf("%s", nomecidade[5]);
     printf("Qual é a população da cidade %s?\n", nomecidade[5]);
     scanf(" %d", &populacao[5]);
@@ -104,9 +106,10 @@ int main() {
     scanf(" %lf", &pib[5]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[5]);
     scanf("%d", &numeropontoturistico[5]);
+    printf("\n");
 
 
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[6]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[6]);
     scanf("%s", nomecidade[6]);
     printf("Qual é a população da cidade %s?\n", nomecidade[6]);
     scanf(" %d", &populacao[6]);
@@ -116,10 +119,10 @@ int main() {
     scanf(" %lf", &pib[6]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[6]);
     scanf("%d", &numeropontoturistico[6]);
+    printf("\n");
 
 
-
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[7]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[7]);
     scanf("%s", nomecidade[7]);
     printf("Qual é a população da cidade %s?\n", nomecidade[7]);
     scanf(" %d", &populacao[7]);
@@ -129,9 +132,10 @@ int main() {
     scanf(" %lf", &pib[7]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[7]);
     scanf("%d", &numeropontoturistico[7]);
+    printf("\n");
 
 
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[8]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[8]);
     scanf("%s", nomecidade[8]);
     printf("Qual é a população da cidade %s?\n", nomecidade[8]);
     scanf(" %d", &populacao[8]);
@@ -141,9 +145,10 @@ int main() {
     scanf(" %lf", &pib[8]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[8]);
     scanf("%d", &numeropontoturistico[8]);
+    printf("\n");
 
 
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[9]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[9]);
     scanf("%s", nomecidade[9]);
     printf("Qual é a população da cidade %s?\n", nomecidade[9]);
     scanf(" %d", &populacao[9]);
@@ -153,9 +158,10 @@ int main() {
     scanf(" %lf", &pib[9]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[9]);
     scanf("%d", &numeropontoturistico[9]);
+    printf("\n");
 
 
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[10]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[10]);
     scanf("%s", nomecidade[10]);
     printf("Qual é a população da cidade %s?\n", nomecidade[10]);
     scanf(" %d", &populacao[10]);
@@ -165,10 +171,11 @@ int main() {
     scanf(" %lf", &pib[10]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[10]);
     scanf("%d", &numeropontoturistico[10]);
+    printf("\n");
 
 
 
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[11]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[11]);
     scanf("%s", nomecidade[11]);
     printf("Qual é a população da cidade %s?\n", nomecidade[11]);
     scanf(" %d", &populacao[11]);
@@ -178,10 +185,10 @@ int main() {
     scanf(" %lf", &pib[11]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[11]);
     scanf("%d", &numeropontoturistico[11]);
+    printf("\n");
+    
 
-
-
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[12]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[12]);
     scanf("%s", nomecidade[12]);
     printf("Qual é a população da cidade %s?\n", nomecidade[12]);
     scanf(" %d", &populacao[12]);
@@ -191,6 +198,7 @@ int main() {
     scanf(" %lf", &pib[12]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[12]);
     scanf("%d", &numeropontoturistico[12]);
+    printf("\n");
 
 
 
@@ -204,10 +212,10 @@ int main() {
     scanf(" %lf", &pib[13]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[13]);
     scanf("%d", &numeropontoturistico[13]);
+    printf("\n");
 
 
-
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[14]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[14]);
     scanf("%s", nomecidade[14]);
     printf("Qual é a população da cidade %s?\n", nomecidade[14]);
     scanf(" %d", &populacao[14]);
@@ -217,10 +225,11 @@ int main() {
     scanf(" %lf", &pib[14]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[14]);
     scanf("%d", &numeropontoturistico[14]);
+    printf("\n");
 
 
 
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[15]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[15]);
     scanf("%s", nomecidade[15]);
     printf("Qual é a população da cidade %s?\n", nomecidade[15]);
     scanf(" %d", &populacao[15]);
@@ -230,9 +239,10 @@ int main() {
     scanf(" %lf", &pib[15]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[15]);
     scanf("%d", &numeropontoturistico[15]);
+    printf("\n");
 
 
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[16]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[16]);
     scanf("%s", nomecidade[16]);
     printf("Qual é a população da cidade %s?\n", nomecidade[16]);
     scanf(" %d", &populacao[16]);
@@ -242,10 +252,11 @@ int main() {
     scanf(" %lf", &pib[16]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[16]);
     scanf("%d", &numeropontoturistico[16]);
+    printf("\n");
 
 
 
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[17]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[17]);
     scanf("%s", nomecidade[17]);
     printf("Qual é a população da cidade %s?\n", nomecidade[17]);
     scanf(" %d", &populacao[17]);
@@ -255,10 +266,10 @@ int main() {
     scanf(" %lf", &pib[17]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[17]);
     scanf("%d", &numeropontoturistico[17]);
+    printf("\n");
 
 
-
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[18]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[18]);
     scanf("%s", nomecidade[18]);
     printf("Qual é a população da cidade %s?\n", nomecidade[18]);
     scanf(" %d", &populacao[18]);
@@ -268,10 +279,11 @@ int main() {
     scanf(" %lf", &pib[18]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[18]);
     scanf("%d", &numeropontoturistico[18]);
+    printf("\n");
 
 
 
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[19]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[19]);
     scanf("%s", nomecidade[19]);
     printf("Qual é a população da cidade %s?\n", nomecidade[19]);
     scanf(" %d", &populacao[19]);
@@ -281,10 +293,10 @@ int main() {
     scanf(" %lf", &pib[19]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[19]);
     scanf("%d", &numeropontoturistico[19]);
+    printf("\n");
 
 
-
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[20]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[20]);
     scanf("%s", nomecidade[20]);
     printf("Qual é a população da cidade %s?\n", nomecidade[20]);
     scanf(" %d", &populacao[20]);
@@ -294,10 +306,10 @@ int main() {
     scanf(" %lf", &pib[20]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[20]);
     scanf("%d", &numeropontoturistico[20]);
+    printf("\n");
 
 
-
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[21]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[21]);
     scanf("%s", nomecidade[21]);
     printf("Qual é a população da cidade %s?\n", nomecidade[21]);
     scanf(" %d", &populacao[21]);
@@ -307,9 +319,10 @@ int main() {
     scanf(" %lf", &pib[21]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[21]);
     scanf("%d", &numeropontoturistico[21]);
+    printf("\n");
 
 
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[22]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[22]);
     scanf("%s", nomecidade[22]);
     printf("Qual é a população da cidade %s?\n", nomecidade[22]);
     scanf(" %d", &populacao[22]);
@@ -319,11 +332,11 @@ int main() {
     scanf(" %lf", &pib[22]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[22]);
     scanf("%d", &numeropontoturistico[22]);
+    printf("\n");
 
 
 
-
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[23]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[23]);
     scanf("%s", nomecidade[23]);
     printf("Qual é a população da cidade %s?\n", nomecidade[23]);
     scanf(" %d", &populacao[23]);
@@ -333,9 +346,10 @@ int main() {
     scanf(" %lf", &pib[23]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[23]);
     scanf("%d", &numeropontoturistico[23]);
+    printf("\n");
 
 
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[24]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[24]);
     scanf("%s", nomecidade[24]);
     printf("Qual é a população da cidade %s?\n", nomecidade[24]);
     scanf(" %d", &populacao[24]);
@@ -345,9 +359,10 @@ int main() {
     scanf(" %lf", &pib[24]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[24]);
     scanf("%d", &numeropontoturistico[24]);
+    printf("\n");
 
 
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[25]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[25]);
     scanf("%s", nomecidade[25]);
     printf("Qual é a população da cidade %s?\n", nomecidade[25]);
     scanf(" %d", &populacao[25]);
@@ -357,9 +372,10 @@ int main() {
     scanf(" %lf", &pib[25]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[25]);
     scanf("%d", &numeropontoturistico[25]);
+    printf("\n");
 
 
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[26]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[26]);
     scanf("%s", nomecidade[26]);
     printf("Qual é a população da cidade %s?\n", nomecidade[26]);
     scanf(" %d", &populacao[26]);
@@ -369,10 +385,10 @@ int main() {
     scanf(" %lf", &pib[26]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[26]);
     scanf("%d", &numeropontoturistico[26]);
+    printf("\n");
 
 
-
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[27]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[27]);
     scanf("%s", nomecidade[27]);
     printf("Qual é a população da cidade %s?\n", nomecidade[27]);
     scanf(" %d", &populacao[27]);
@@ -382,10 +398,10 @@ int main() {
     scanf(" %lf", &pib[27]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[27]);
     scanf("%d", &numeropontoturistico[27]);
+    printf("\n");
 
 
-
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[28]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[28]);
     scanf("%s", nomecidade[28]);
     printf("Qual é a população da cidade %s?\n", nomecidade[28]);
     scanf(" %d", &populacao[28]);
@@ -395,9 +411,10 @@ int main() {
     scanf(" %lf", &pib[28]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[28]);
     scanf("%d", &numeropontoturistico[28]);
+    printf("\n");
 
 
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[29]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[29]);
     scanf("%s", nomecidade[29]);
     printf("Qual é a população da cidade %s?\n", nomecidade[29]);
     scanf(" %d", &populacao[29]);
@@ -407,10 +424,10 @@ int main() {
     scanf(" %lf", &pib[29]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[29]);
     scanf("%d", &numeropontoturistico[29]);
+    printf("\n");
 
 
-
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[30]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[30]);
     scanf("%s", nomecidade[30]);
     printf("Qual é a população da cidade %s?\n", nomecidade[30]);
     scanf(" %d", &populacao[30]);
@@ -420,10 +437,10 @@ int main() {
     scanf(" %lf", &pib[30]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[30]);
     scanf("%d", &numeropontoturistico[30]);
-
+    printf("\n");
 
     
-    printf("Entre com o nome da Cidade %s\n\n", codigocidade[31]);
+    printf("Entre com o nome da Cidade %s\n", codigocidade[31]);
     scanf("%s", nomecidade[31]);
     printf("Qual é a população da cidade %s?\n", nomecidade[31]);
     scanf(" %d", &populacao[31]);
@@ -433,7 +450,7 @@ int main() {
     scanf(" %lf", &pib[31]);
     printf("Quantos pontos turísticos tem na cidade %s?\n", nomecidade[31]);
     scanf("%d", &numeropontoturistico[31]);
-
+    printf("\n");
 
     //Inicio da Imprenssão das Cartas
 
