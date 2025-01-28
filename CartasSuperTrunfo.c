@@ -35,7 +35,12 @@ int main() {
 
 
     //Cadastro das infomações das cartas
+
     printf("\n");
+
+    printf("JOGO SUPER TRUNFO\n");
+    printf("É preciso cadastrar as 32 cartas.\n");
+
     printf("Entre com o nome da Cidade %s\n", codigocidade[0]);
     scanf("%s", nomecidade[0]);
     printf("Qual é a população da cidade %s?\n", nomecidade[0]);
