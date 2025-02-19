@@ -38,8 +38,9 @@ int main() {
 
     printf("\n");
 
-    printf("JOGO SUPER TRUNFO\n");
-    printf("É preciso cadastrar as 32 cartas.\n");
+    printf("BENVINDO AO\n");
+    printf("JOGO SUPER TRUNFO\n\n");
+    printf("É preciso cadastrar as 32 cartas para iniciar o jogo.\n");
 
     printf("Entre com o nome da Cidade %s\n", codigocidade[0]);
     scanf("%s", nomecidade[0]);
@@ -816,144 +817,6 @@ int main() {
     printf("Densidade Populacional de %s: %.2f hab./km²\n", nomecidade[31], densidade[31]);
     printf("Pib per capita de %s é: %.2f USD \n\n", nomecidade[31], pibpercapita[31]);
 
-    //Mostra os códigos das cartas
-
-    printf("Códigos das Cartas \n (%s)\n", mostracodigos);
-    printf("\n");
-
-    //solicitar código da primeira cartas ao usuário
-    //Confere se a primeira carta é válida
-
-    do 
-        {
-            printf("Entre com o código da primeira carta: ");
-            scanf("%d", &recebecartadigitada1);
-            printf("\n");
-    
-    
-            if (recebecartadigitada1 < 1 || recebecartadigitada1 > 2)
-                printf("Carta Inválida! Digite um código válido. Tente novamente\n");
-                printf("\n");
-        }
-
-    while (recebecartadigitada1 < 1 || recebecartadigitada1 > 2);
-
-    //Solicitar código da segunda carta ao usuário
-    //Confere se a segunda carta é válida
-    do 
-        {
-            printf("Entre com o código da segunda carta: ");
-            scanf("%d", &recebecartadigitada2);
-            printf("\n");
-    
-    
-            if (recebecartadigitada2 < 1 || recebecartadigitada2 > 2)
-                printf("Carta Inválida! Digite um código válido. Tente novamente\n");
-                printf("\n");
-        }
-
-    while (recebecartadigitada2 < 1 || recebecartadigitada2 > 2);
-
-
-
-    //compara as propriedades das duas cartas escolhidas
-    
-    printf("Escolha uma propriedade da carta escolhida:\n");
-    printf("1 - População \n");
-    printf("2 - Área \n");
-    printf("3 - PIB \n");
-    printf("4 - Numero de pontos turísticos \n");
-    printf("5 - Densidade Populacional \n");
-    printf("6 -PIB per Capita \n");
-    scanf("%d", &criterio);
-    printf("\n");
-
-    if(criterio == 1){ //compara pela maior população
-        if (populacao[recebecartadigitada1 - 1] > populacao[recebecartadigitada2 - 1]){
-            vencedor = 1; //Carta 1 vence     
-        } else if (populacao[recebecartadigitada1 - 1] < populacao[recebecartadigitada2 - 1]){
-            vencedor = 2; //Carta 2 vence
-        }
-    } else if (criterio == 2) { //compara pela maior area
-        if (area[recebecartadigitada1 - 1] > area[recebecartadigitada2 -  1]){
-            vencedor = 1; //Carta 1 vence
-        }else if (area[recebecartadigitada1 - 1] < area[recebecartadigitada2 - 1]){
-            vencedor = 2; //Carta 2 vence
-        }
-    } else if (criterio == 3){ //compara pelo maior PIB
-        if (pib[recebecartadigitada1 - 1] > pib[recebecartadigitada2 -1]){
-            vencedor = 1; //Carta 1 vence
-        }else if (pib[recebecartadigitada1 - 1] < pib[recebecartadigitada2]){
-            vencedor = 2; //Carta 2 vence
-        }
-    }else if (criterio == 4){ //compara pelo maior número de pontos turísticos
-        if (numeropontoturistico[recebecartadigitada1 - 1] > numeropontoturistico[recebecartadigitada2 - 1] -1){
-            vencedor = 1; //Carta 1 vence
-        }else if (numeropontoturistico[recebecartadigitada1 - 1] < numeropontoturistico[recebecartadigitada2 - 1]){
-            vencedor = 2; //Carta 2 vence
-        }
-    }else if (criterio == 5){ //compara pela menor densidade populacional
-        if (densidade[recebecartadigitada1] < densidade[recebecartadigitada2 - 1]){
-            vencedor = 1; //Carta 1 vence
-        }else if (densidade[recebecartadigitada1 - 1] > densidade[recebecartadigitada2 -1]){
-            vencedor = 2; //Carta 2 vence
-        }
-    }else if (criterio == 6){ //compara pelo maior pib percapta
-        if (pibpercapita[recebecartadigitada1 - 1] > pibpercapita[recebecartadigitada2 - 1]){
-            vencedor = 1; //Carta 1 vence
-        }else if (pibpercapita[recebecartadigitada1 - 1] < pibpercapita[recebecartadigitada2 - 1]){
-            vencedor = 2; //Carta 2 vence
-        }
-    } else {
-        printf("Propriedade inválida!\n");
-    }
-    
-        
-           //Soma os valores das propriedades das cartas
-        soma1 = populacao[recebecartadigitada1 - 1] +
-         area[recebecartadigitada1 -1] + pib[recebecartadigitada1 - 1] + numeropontoturistico[recebecartadigitada1 -1];
-        soma2 = populacao[recebecartadigitada2 - 1] +
-         area[recebecartadigitada2 -1] + pib[recebecartadigitada2 - 1] + numeropontoturistico[recebecartadigitada2 -1];
-
-
-    //Mostra quem venceu   
-
-    if (vencedor == 1)
-        {
-
-            printf("A Carta %d = %s - VENCEU!!!\n", recebecartadigitada1, codigocidade[recebecartadigitada1 -1]);
-            printf("Cidade: %s\n", nomecidade[recebecartadigitada1 -1]);
-            printf("População total da cidade: %d milhões de pessoas\n", populacao[recebecartadigitada1 -1]);
-            printf("Área Total: %.2f Km\n", area[recebecartadigitada1 -1]);
-            printf("PIB total da cidade de %s é: %.2lf milhões de dolares\n", nomecidade[recebecartadigitada1-1], pib[recebecartadigitada1 -1]);
-            printf("Número de pontos turísticos: %d\n", numeropontoturistico[recebecartadigitada1 -1]);
-            printf("Densidade Populacional de %s: %.2f hab./km²\n", nomecidade[recebecartadigitada1 -1], densidade[recebecartadigitada1 -1]);
-            printf("Pib per capita de %s é: %.2f USD \n", nomecidade[recebecartadigitada1 -1], pibpercapita[recebecartadigitada1 -1]);
-            printf("SUPER TRUNFO: Total de pontos %d\n\n", soma1);  
-        }
-     else if (vencedor == 2)
-        {
-            printf("A Carta %d = %s - VENCEU!!!\n", recebecartadigitada2, codigocidade[recebecartadigitada2 -1]);
-            printf("Cidade: %s\n", nomecidade[recebecartadigitada2 -1]);
-            printf("População total da cidade: %d milhões de pessoas\n", populacao[recebecartadigitada2 -1]);
-            printf("Área Total: %.2f Km\n", area[recebecartadigitada2 -1]);
-            printf("PIB total da cidade de %s é: %.2lf milhões de dolares\n", nomecidade[recebecartadigitada2 - 1], pib[recebecartadigitada2 -1]);
-            printf("Número de pontos turísticos: %d\n", numeropontoturistico[recebecartadigitada2 -1]);
-            printf("Densidade Populacional de %s: %.2f hab./km²\n", nomecidade[recebecartadigitada2 -1], densidade[recebecartadigitada2 -1]);
-            printf("Pib per capita de %s é: %.2f USD \n\n", nomecidade[recebecartadigitada2 -1], pibpercapita[recebecartadigitada2 -1]);
-            printf("SUPER TRUNFO: Total de pontos %d\n\n", soma2); 
-        }
-    else
-        {
-
-            printf("As Cartas %d e %d tem o mesmo valor! JOGO EMPATADO.\n", recebecartadigitada1, recebecartadigitada2);
-
-        }   
-
-        printf("\n");
-
-                      
-       
     
     return 0;
 
