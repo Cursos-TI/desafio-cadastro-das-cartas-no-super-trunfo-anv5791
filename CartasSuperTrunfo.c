@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
@@ -18,18 +20,18 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
     
-
-    char codigocidade[32] [4] = {"A01","A02","A03","A04","B01","B02","B03","B04",
-    "C01","C02","C03","C04","D01","D02","D03","D04",
-    "E01","E02","E03","E04","F01","F02","F03","F04",
-    "G01","G02","G03","G04","H01","H02","H03","H04"};
+    char codigocidade[3] [4] = {"A01","A02","A03","A04","B01","B02","B03","B04",
+        "C01","C02","C03","C04","D01","D02","D03","D04",
+        "E01","E02","E03","E04","F01","F02","F03","F04",
+        "G01","G02","G03","G04","H01","H02","H03","H04"};
     char nomecidade[32] [20];
     int populacao [32], numeropontoturistico [32];
     float area[32], densidade[32], pibpercapita[32];
     double pib[32];
     char mostracodigos[350] = "1 = A01, 2 = A02, 3 = A03, 4 = A04,\n 5 = B05, 6 = B06, 7 = B07, 8 = B08,\n 9 = C09, 10 = C10, 11 = C11, 12 = C12,\n 13 = D13, 14 = D14, 15 = D15, 16 = D16,\n 17 = E17, 18 = E18, 19 = E19, 20 = E20,\n 21 = F21, 22 = F22, 23 = F23, 24 = F24,\n 25 = G25, 26 = G26, 27 = G27, 28 = G28,\n 29 = H29, 30 = H30, 31 = H31, 32 = H32\n";
-    
-    
+    double soma1 = 0, soma2 = 0;
+    int continua = 1;
+
     
     //Cadastro das infomações das cartas
 
@@ -886,9 +888,239 @@ int main() {
     printf("Pib per capita de %s é: R$%.2f mil reais \n\n", nomecidade[31], pibpercapita[31]);
 
 
+    do 
+    {
+        printf("*** Menu Cartas ***\n\n");
+        printf("Códigos das Cartas (%s)\n", mostracodigos);//Mostra código das cartas
+        printf("\n");
 
 
 
+        int cartaJogador = 0;
+        int cartaComputador = 0;
+        int propriedade = 0;
+
+        //Esolha do jogador
+        do
+        {
+            printf("Escolha uma carta de 1 a 3: ");
+            scanf(" %d", &cartaJogador);
+            printf("\n");
+
+            if (cartaJogador < 1 || cartaJogador > 3) {
+            printf("Carta Inválida! Escolha um número entre 1 e 3.\n");
+            
+            }
+        } while (cartaJogador < 1 || cartaJogador > 3);
+        
+    
+        //Escolha da carta pelo computador
+        srand (time (0));
+        cartaComputador = rand () % 3 + 1;
+
+        //cálculo de pontos
+        soma1 = populacao[cartaJogador - 1] +
+                area[cartaJogador -1] + pib[cartaJogador - 1] + numeropontoturistico[cartaJogador -1];
+        soma2 = populacao[cartaComputador - 1] + 
+                area[cartaComputador -1] + pib[cartaComputador - 1] + numeropontoturistico[cartaComputador -1];
+
+            //Escolha das propriedades
+            printf("\n");
+            printf("***Menu Propriedades***\n\n");
+            
+            printf("1 - População \n");
+            printf("2 - Área \n");
+            printf("3 - PIB \n");
+            printf("4 - Numero de pontos turísticos \n");
+            printf("5 - Densidade Populacional \n");
+            printf("6 -PIB per Capita \n\n");
+           
+           
+            do
+            {
+                printf("Escolha uma propriedade da carta escolhida:\n");
+                scanf(" %d", &propriedade);
+
+                if (propriedade < 1 || propriedade > 6) {
+                printf("Carta Inválida! Escolha um número entre 1 e 3.\n");
+                }
+            } while (propriedade < 1 || propriedade > 6);
+            
+
+
+         //Mostra carta do jogador
+            
+            printf("\n");
+            printf("Sua Carta é %d = %s \n\n", cartaJogador, codigocidade[cartaJogador -1]);
+            printf("Cidade: %s\n", nomecidade[cartaJogador -1]);
+            printf("População total da cidade: %d milhões de pessoas\n", populacao[cartaJogador -1]);
+            printf("Área Total: %.2f Km\n", area[cartaJogador -1]);
+            printf("PIB total da cidade de %s é: %.2lf milhões de dolares\n", nomecidade[cartaJogador -1], pib[cartaJogador -1]);
+            printf("Número de pontos turísticos: %d\n", numeropontoturistico[cartaJogador -1]);
+            printf("Densidade Populacional de %s: %.2f hab./km²\n", nomecidade[cartaJogador -1], densidade[cartaJogador -1]);
+            printf("Pib per capita de %s é: %.2f USD \n", nomecidade[cartaJogador -1], pibpercapita[cartaJogador -1]);
+            printf("SUPER TRUNFO: Total de pontos %.2lf\n\n", soma1);  
+                      
+            
+
+            //Mostra carta do Computador
+            
+            printf("\n");
+            printf("A Carta do Computador é: %s \n\n", codigocidade[cartaComputador -1]);
+            printf("Cidade: %s\n", nomecidade[cartaComputador -1]);
+            printf("População total da cidade: %d milhões de pessoas\n", populacao[cartaComputador -1]);
+            printf("Área Total: %.2f Km\n", area[cartaComputador -1]);
+            printf("PIB total da cidade de %s é: %.2lf milhões de dolares\n", nomecidade[cartaComputador -1], pib[cartaComputador -1]);
+            printf("Número de pontos turísticos: %d\n", numeropontoturistico[cartaComputador -1]);
+            printf("Densidade Populacional de %s: %.2f hab./km²\n", nomecidade[cartaComputador -1], densidade[cartaComputador -1]);
+            printf("Pib per capita de %s é: %.2f USD \n", nomecidade[cartaComputador -1], pibpercapita[cartaComputador -1]);
+            printf("SUPER TRUNFO: Total de pontos %.2lf\n\n", soma2);
+            
+            //Comparação das escolhas
+        
+            switch (propriedade)
+            {
+                case 1:
+                    if (populacao[cartaJogador - 1] > populacao[cartaComputador - 1]){//compara pela população
+                        printf("O Jogador VENCEU com a carta %s %s \n\n", codigocidade[cartaJogador - 1], nomecidade[cartaJogador - 1]);         
+                    } else if (populacao[cartaJogador - 1] < populacao[cartaComputador - 1]){
+                        printf("O Computador VENCEU com a carta %s %s \n\n", codigocidade[cartaComputador -1], nomecidade[cartaComputador - 1]);
+                    }else {
+                        printf("Empate!\n\n");
+                    }
+                    break;
+
+                case 2:
+                    if (area[cartaJogador - 1] > area[cartaComputador -  1]){ //compara pela área
+                        printf("O Jogador VENCEU com a carta %s %s \n\n", codigocidade[cartaJogador - 1], nomecidade[cartaJogador - 1]);
+                    }else if (area[cartaJogador - 1] < area[cartaComputador -  1]){ 
+                        printf("O Computador VENCEU com a carta %s %s \n\n", codigocidade[cartaComputador -1], nomecidade[cartaComputador - 1]);
+                    }else {
+                        printf("Empate!\n\n");
+                    }
+                    break;           
+                case 3:
+                    if (pib[cartaJogador - 1] > pib[cartaComputador -1]){ //compara pelo pib
+                        printf("O Jogador VENCEU com a carta %s %s \n\n", codigocidade[cartaJogador - 1], nomecidade[cartaJogador - 1]);
+                    }else if (pib[cartaJogador - 1] < pib[cartaComputador -1]){
+                        printf("O Computador VENCEU com a carta %s %s \n\n", codigocidade[cartaComputador -1], nomecidade[cartaComputador - 1]);
+                    }else {
+                        printf("Empate!\n\n");
+                    }
+                    break;
+                case 4:
+                    if (numeropontoturistico[cartaJogador - 1] > numeropontoturistico[cartaComputador - 1]){ //compara ponto turístico
+                        printf("O Jogador VENCEU com a carta %s %s \n\n", codigocidade[cartaJogador - 1], nomecidade[cartaJogador - 1]);
+                    }else if (numeropontoturistico[cartaJogador - 1] < numeropontoturistico[cartaComputador - 1]){
+                        printf("O Computador VENCEU com a carta %s %s \n\n", codigocidade[cartaComputador -1], nomecidade[cartaComputador - 1]);
+                    }else   {
+                        printf("Empate!\n\n");
+                    }
+                    break;   
+                case 5:
+                    if (densidade[cartaJogador -1] < densidade[cartaComputador - 1]){ //compara densidade "menor vence"
+                        printf("O Jogador VENCEU com a carta %s %s \n\n", codigocidade[cartaJogador - 1], nomecidade[cartaJogador - 1]);
+                    }else if ((densidade[cartaJogador -1] > densidade[cartaComputador - 1])){
+                        printf("O Computador VENCEU com a carta %s %s \n\n", codigocidade[cartaComputador -1], nomecidade[cartaComputador - 1]);
+                    }else {
+                        printf("Empate!\n\n");
+                    }
+                    break;
+                case 6:
+                    if (pibpercapita[cartaJogador - 1] > pibpercapita[cartaComputador - 1]){ //compara PIB percapita
+                        printf("O Jogador VENCEU com a carta %s %s \n\n", codigocidade[cartaJogador - 1], nomecidade[cartaJogador - 1]);
+                    }else if (pibpercapita[cartaJogador - 1] > pibpercapita[cartaComputador - 1]){
+                        printf("O Computador VENCEU com a carta %s %s \n\n", codigocidade[cartaComputador -1], nomecidade[cartaComputador - 1]);
+                    }else {
+                        printf("Empate!\n\n");
+                    break;
+                default:
+                    printf("Opção inválida! Escolha um número entre 1 e 6.\n");
+                    break;
+                    }
+            }
+    //Comparação das outras propriedades
+    printf("***Comparação das Propriedades***\n");
+
+    // População
+        if (populacao[cartaJogador - 1] > populacao[cartaComputador - 1]) {
+            printf("Se a escolha fosse (1 - População), Jogador Venceria\n");
+        } else if (populacao[cartaJogador - 1] < populacao[cartaComputador - 1]) {
+            printf("Se a escolha fosse (1 - População), Computador Venceria\n");
+        } else {
+            printf("Se a escolha fosse (1 - População), Empate!\n");
+        }
+
+        // Área
+        if (area[cartaJogador - 1] > area[cartaComputador - 1]) {
+            printf("Se a escolha fosse (2 - Área), Jogador Venceria\n");
+        } else if (area[cartaJogador - 1] < area[cartaComputador - 1]) {
+            printf("Se a escolha fosse (2 - Área), Computador Venceria\n");
+        } else {
+            printf("Se a escolha fosse (2 - Área), Empate!\n");
+        }
+
+        // PIB
+        if (pib[cartaJogador - 1] > pib[cartaComputador - 1]) {
+            printf("Se a escolha fosse (3 - PIB), Jogador Venceria\n");
+        } else if (pib[cartaJogador - 1] < pib[cartaComputador - 1]) {
+            printf("Se a escolha fosse (3 - PIB), Computador Venceria\n");
+        } else {
+            printf("Se a escolha fosse (3 - PIB), Empate!\n");
+        }
+
+        // Pontos Turísticos
+        if (numeropontoturistico[cartaJogador - 1] > numeropontoturistico[cartaComputador - 1]) {
+            printf("Se a escolha fosse (4 - Pontos Turísticos), Jogador Venceria\n");
+        } else if (numeropontoturistico[cartaJogador - 1] < numeropontoturistico[cartaComputador - 1]) {
+            printf("Se a escolha fosse (4 - Pontos Turísticos), Computador Venceria\n");
+        } else {
+            printf("Se a escolha fosse (4 - Pontos Turísticos), Empate!\n");
+        }
+
+        // Densidade Populacional
+        if (densidade[cartaJogador - 1] < densidade[cartaComputador - 1]) {
+            printf("Se a escolha fosse (5 - Densidade Populacional), Jogador Venceria\n");
+        } else if (densidade[cartaJogador - 1] > densidade[cartaComputador - 1]) {
+            printf("Se a escolha fosse (5 - Densidade Populacional), Computador Venceria\n");
+        } else {
+            printf("Se a escolha fosse (5 - Densidade Populacional), Empate!\n");
+        }
+
+        // PIB per Capita
+        if (pibpercapita[cartaJogador - 1] > pibpercapita[cartaComputador - 1]) {
+            printf("Se a escolha fosse (6 - PIB per Capita), Jogador Venceria\n");
+        } else if (pibpercapita[cartaJogador - 1] < pibpercapita[cartaComputador - 1]) {
+            printf("Se a escolha fosse (6 - PIB per Capita), Computador Venceria\n");
+        } else {
+            printf("Se a escolha fosse (6 - PIB per Capita), Empate!\n");
+        }
+
+        // Comparação do SUPER TRUNFO (soma total de pontos)
+        if (soma1 > soma2) {
+            printf("Jogador Venceu a rodada com o ***SUPERTRUNFO*** total de pontos %.2lf\n\n", soma1);
+        } else if (soma1 < soma2) {
+            printf("Computador Venceu a rodada com o ***SUPERTRUNFO*** total de pontos %.2lf\n\n", soma2);
+        } else {
+            printf("Empate no ***SUPERTRUNFO***!\n\n");
+        }
+
+        do
+        {
+            printf("Deseja continuar a jogar? (1 = Sim ou 2 = Não): ");
+            scanf(" %d", &continua);
+
+            if (continua != 1 && continua !=2){
+                printf("Valor inválido! Digite 1 para continuar ou 2 para sair.\n");
+            }
+
+        } while (continua != 1 && continua !=2);
+   
+           
+    } while (continua == 1 );
+    
+    printf("\n");
+    printf("Fim de Jogo\n\n");
 
 
     return 0;
