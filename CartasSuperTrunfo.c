@@ -20,7 +20,7 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
     
-    char codigocidade[3] [4] = {"A01","A02","A03","A04","B01","B02","B03","B04",
+    char codigocidade[32] [4] = {"A01","A02","A03","A04","B01","B02","B03","B04",
         "C01","C02","C03","C04","D01","D02","D03","D04",
         "E01","E02","E03","E04","F01","F02","F03","F04",
         "G01","G02","G03","G04","H01","H02","H03","H04"};
